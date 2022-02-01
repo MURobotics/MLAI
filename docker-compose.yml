@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  mlai-base:
+    build:
+      dockerfile: Dockerfile
+      context: ./MLAI-Base
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
